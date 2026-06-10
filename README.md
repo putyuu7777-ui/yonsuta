@@ -1,1 +1,176 @@
-# yonsuta
+[yonsuta.html](https://github.com/user-attachments/files/28798035/yonsuta.html)<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>よんスタ公式</title>
+<link rel="icon" href="yonsuta_icon.png">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Inter","Noto Sans JP",sans-serif}
+body{background:#f7f8fc;color:#111;line-height:1.7;overflow-x:hidden}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:#4f7cff;z-index:9999}
+header{position:fixed;top:0;width:100%;height:60px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid #eee;z-index:1000}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700}
+.logo img{width:38px;height:38px;border-radius:10px;object-fit:cover}
+nav a{margin-left:16px;text-decoration:none;color:#333;font-weight:500}
+nav a:hover{color:#4f7cff}
+.hero{height:100vh;display:flex;align-items:center;padding:0 6vw}
+.hero h1{font-size:3rem}
+.hero p{margin-top:10px;color:#555}
+.cta,.cta2{display:inline-block;text-decoration:none;border-radius:999px}
+.cta{margin-top:20px;padding:12px 28px;background:#4f7cff;color:#fff}
+.cta2{padding:8px 18px;background:#eef3ff;color:#4f7cff;margin:12px 16px 16px}
+.section{padding:120px 6vw}
+.section h2{margin-bottom:24px}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:#fff;border:1px solid #eaeaea;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06);opacity:0;transform:translateY(40px);transition:.6s}
+.card.show{opacity:1;transform:translateY(0)}
+.card:hover{transform:translateY(-6px)}
+.video{width:100%;aspect-ratio:16/9}
+.video iframe{width:100%;height:100%;border:none}
+.img-wrap{width:100%;aspect-ratio:16/9;overflow:hidden}
+.img-wrap img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card:hover img{transform:scale(1.05)}
+
+.sns{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.sns-card{display:flex;align-items:center;gap:12px;padding:16px;background:#fff;border:1px solid #eaeaea;border-radius:16px;text-decoration:none;color:inherit}
+.sns-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.youtube{background:#ff0033}
+.instagram{background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)}
+.discord{background:#5865f2}
+.tiktok{background:#111}
+
+.floating-sns{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:9999}
+.floating-btn{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none}
+footer{text-align:center;padding:40px;color:#777}
+
+@media(max-width:768px){
+.hero h1{font-size:2.2rem}
+.cta{display:block;text-align:center;width:100%}
+.sns{display:flex;overflow-x:auto}
+.sns-card{min-width:220px}
+}
+</style>
+</head>
+
+<body>
+<div class="progress"></div>
+
+<header>
+<div class="logo"><img src="yonsuta_icon.png"><span>よんスタ</span></div>
+<nav>
+<a href="#about">ABOUT</a>
+<a href="#video">VIDEO</a>
+<a href="#world">WORLD</a>
+<a href="#sns">SNS</a>
+<a href="#contact">CONTACT</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>よんスタ</h1>
+<p>初心者がプロ建築士になる。<br>世界を作りながら、笑わせる建築チャンネル</p>
+<a href="#video" class="cta">最新動画を見る</a>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>ABOUT</h2>
+<div class="card" style="padding:32px;">
+<h3>初心者がプロ建築士になる。</h3>
+<p>よんスタはMinecraft建築を中心に活動するクリエイター‼</p><br>
+<p>2025年4月30日開始。建築初心者がプロ建築士を目指し活動中‼</p><br>
+<p>見て楽しい・作って楽しい世界づくり🔥</p><br>
+<p>居場所がない？ここにあるよ‼</p><br>
+</div>
+</section>
+
+<section id="video" class="section">
+<h2>VIDEO</h2>
+<div class="grid">
+<div class="card"><div class="video"><iframe src="https://www.youtube.com/embed/RXM2RSbqcR4" allowfullscreen></iframe></div></div>
+<div class="card"><div class="video"><iframe src="https://www.youtube.com/embed/eThj11G9kL0" allowfullscreen></iframe></div></div>
+<div class="card"><div class="video"><iframe src="https://www.youtube.com/embed/I-ggrmaWyug" allowfullscreen></iframe></div></div>
+</div>
+</section>
+
+<section id="world" class="section">
+<h2>WORLD</h2>
+<div class="grid">
+<div class="card"><div class="img-wrap"><img src="build1.jpg"></div><div style="padding:16px">黒だけ建築の城</div></div>
+<div class="card"><div class="img-wrap"><img src="build2.jpg"></div><div style="padding:16px">要塞</div></div>
+<div class="card"><div class="img-wrap"><img src="build3.jpg"></div><div style="padding:16px">クソでか鳥居</div></div>
+<div class="card"><div class="img-wrap"><img src="build4.jpg"></div><div style="padding:16px">廃墟化した電車</div></div>
+<div class="card"><div class="img-wrap"><img src="build5.jpg"></div><div style="padding:16px">ネザーゲート</div></div>
+<div class="card"><div class="img-wrap"><img src="build6.jpg"></div><div style="padding:16px">200メートル超えの東京タワー</div></div>
+<div class="card"><div class="img-wrap"><img src="build7.jpg"></div><div style="padding:16px">白いお城</div></div>
+<div class="card"><div class="img-wrap"><img src="build8.jpg"></div><div style="padding:16px">クソでか和風建築</div></div>
+<div class="card"><div class="img-wrap"><img src="build9.jpg"></div><div style="padding:16px">廃墟都市</div></div>
+<div class="card"><div class="img-wrap"><img src="build10.jpg"></div><div style="padding:16px">海に沈んだ都市</div></div>
+<div class="card"><div class="img-wrap"><img src="build11.jpg"></div><div style="padding:16px">飛行船</div></div>
+</div>
+</section>
+
+<section id="sns" class="section">
+<h2>SNS</h2>
+<div class="sns">
+
+<a class="sns-card" href="https://www.youtube.com/@yon_Stack" target="_blank">
+<div class="sns-icon youtube">YT</div><div>YouTube</div></a>
+
+<a class="sns-card" href="https://www.instagram.com/yonstack/" target="_blank">
+<div class="sns-icon instagram">IG</div><div>Instagram</div></a>
+
+<a class="sns-card" href="https://www.tiktok.com/@yon_stack" target="_blank">
+<div class="sns-icon tiktok">TT</div><div>TikTok</div></a>
+
+<a class="sns-card" href="https://discord.gg/839WAR666" target="_blank">
+<div class="sns-icon discord">DC</div><div>Discord</div></a>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>CONTACT</h2>
+<div class="card" style="padding:40px;text-align:center">
+<h3>お仕事・コラボのご相談</h3>
+<p style="margin-top:10px;color:#666">お問い合わせはこちら</p>
+<a class="cta" href="https://forms.gle/rArTeVQD9jDXFtBaA" target="_blank">フォームへ</a>
+</div>
+</section>
+
+<footer>© よんスタ/putyuu管理者</footer>
+
+<div class="floating-sns">
+<a class="floating-btn youtube" href="https://www.youtube.com/@yon_Stack" target="_blank">YT</a>
+<a class="floating-btn instagram" href="https://www.instagram.com/yonstack/" target="_blank">IG</a>
+<a class="floating-btn tiktok" href="https://www.tiktok.com/@yon_stack" target="_blank">TT</a>
+<a class="floating-btn discord" href="https://discord.gg/839WAR666" target="_blank">DC</a>
+</div>
+
+<script>
+window.addEventListener("scroll",()=>{
+const s=window.scrollY;
+const h=document.body.scrollHeight-window.innerHeight;
+document.querySelector(".progress").style.width=(s/h)*100+"%";
+});
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show");});
+});
+
+document.querySelectorAll(".card").forEach(c=>observer.observe(c));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener("click",e=>{
+e.preventDefault();
+const t=document.querySelector(a.getAttribute("href"));
+window.scrollTo({top:t.offsetTop-60,behavior:"smooth"});
+});
+});
+</script>
+
+</body>
+</html>
